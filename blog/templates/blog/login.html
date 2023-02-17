@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'blog/css/login_style.css' %}">
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <span>
+            djangoBlog
+        </span>
+        <nav class="header__nav">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a class="button button__primary" href="">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="form">
+            <form action="" method="post">
+                {% csrf_token %}
+                <div class="input__field">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div class="input__field ">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div>
+                    <a class="forget" href="#">Forget password</a>
+                </div>
+                <div class="input__field">
+                    <input type="submit" value="login" class="button__primary button">
+                </div>
+            </form>
+        </div>
+    </main>
+    
+</body>
+
+</html>

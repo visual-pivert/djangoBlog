@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'blog/css/login_style.css' %}">
+    <title>Sign up</title>
+</head>
+
+<body>
+    <header>
+        <span>
+            djangoBlog
+        </span>
+        <nav class="header__nav">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a class="button button__primary" href="">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="form">
+            {{user}}
+            <form action="" method="post">
+                {% csrf_token %}
+                {{ form }}
+                <!--div class="input__field">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div class="input__field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="mail">
+                </div>
+                <div class="input__field">
+                    <label for="birth">Date of birth</label>
+                    <input type="date" id="birth" name="birth">
+                </div>
+                <div class="input__field">
+                    <label for="birth">Sex</label>
+                    <select name="sex" id="birth">
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                    </select>
+                </div>
+                <div class="input__field ">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="input__field ">
+                    <label for="cpassword">Confirm password</label>
+                    <input type="password" id="cpassword" name="cpassword">
+                </div>
+                <div>
+                    <a class="forget" href="#">Forget password</a>
+                </div-->
+                <div class="input__field">
+                    <input type="submit" value="Sign up" class="button__primary button">
+                </div >
+            </form>
+        </div>
+    </main>
+    
+</body>
+
+</html>

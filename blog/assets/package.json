@@ -1,0 +1,16 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/preset-react": "^7.18.6"
+  },
+  "scripts": {
+    "watch": "npx babel src --watch --out-dir ./../static/blog/js",
+    "build": "npx babel src --out-file lib/script.js",
+    "dev": "npx babel src --out-dir ./../static/blog/js"
+  }
+}

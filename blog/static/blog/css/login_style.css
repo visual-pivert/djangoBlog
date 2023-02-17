@@ -1,0 +1,101 @@
+:root {
+    --radius: 8px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    background:rgb(102, 102, 219);
+    color: white;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav > ul  > li{
+    display: inline-block;
+    margin: 0 1em;;
+}
+
+.header__nav > ul > li > a {
+    color: white
+}
+
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    border: solid 2px black;
+    border-radius: var(--radius);
+    padding: 0.5em 1.2em;
+    color: white;
+    font-size: 18px;
+    border-radius: var(--radius);
+    opacity: 0.8;
+}
+
+.button.button__primary {
+    background: rgb(102, 102, 219);
+}
+
+.button:hover {
+    opacity: 1;
+}
+
+.input__field {
+    width: 100%;
+}
+
+.input__field > label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 0.5em;
+}
+
+.input__field > input:not(.button), .input__field > select {
+    font-size: 18px;
+    padding: 0.5em;
+    border-radius: var(--radius);
+    border: solid 2px black;
+    width: 100%;
+}
+
+.input__field > select{
+    width: 100%;
+}
+
+.form {
+    border: solid 2px black;
+    border-radius: var(--radius);
+    padding: 1em;
+}
+
+.form > form > div {
+    margin-bottom: 1em;
+}

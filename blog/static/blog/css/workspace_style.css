@@ -1,0 +1,50 @@
+:root {
+    --primary_color: rgb(64, 94, 142);
+    --second_color: #fefefe;
+    --font_color: #1b1b1b;
+    --font_color_soft: #373737;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--font_color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0px 80px;
+    background-color: var(--primary_color);
+}
+
+.name {
+    font-size: 1.5rem;
+    color: var(--second_color)
+}
+
+.bloglist_main {
+    padding: 20px 20vw;
+}
+
+.blog {
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px -10px var(--font_color);
+}
+
+.desc_container {
+    /* height: 80px; */
+    margin-top: 10px;
+}
+
+.blog p {
+    font-size: .8rem;
+    color: var(--font_color_soft);
+}
